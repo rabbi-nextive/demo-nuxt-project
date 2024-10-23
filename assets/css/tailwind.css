@@ -1,0 +1,26 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .btn{
+        @apply bg-green-600 text-2xl text-white rounded-md px-3 py-2 hover:bg-[#3a9d72] transition duration-300;
+    }
+    .nav-link{
+        @apply  hover:text-[#3a9d72] transition duration-300;
+    }
+    .thumb{
+        @apply w-[150px] h-[150px] ;
+    }
+    .cart-btn{
+       @apply bg-[#3a9d72]  text-white rounded-md px-1.5 py-0.5 hover:bg-[#2a805b] transition duration-300;
+    }
+    .favourite-btn{
+        @apply  border rounded-md  px-1.5 py-0.5 hover:border-[#3a9d72] transition duration-300;
+    }
+    .product-card{
+        @apply border border-green-500 rounded-md flex justify-center flex-col p-2 shadow-md hover:shadow-2xl;
+    }
+}
